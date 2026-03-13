@@ -1,0 +1,13 @@
+package com.kh.constant;
+
+public class Constant {
+	/*
+	 * Do you know 상수? 상수는 항상 상. 2x로 치면 2는 상수, x는 변수.
+	 */
+	
+	public static void main(String[] args) {
+	
+	System.out.print(7);
+	System.out.print(-7);
+	}
+}

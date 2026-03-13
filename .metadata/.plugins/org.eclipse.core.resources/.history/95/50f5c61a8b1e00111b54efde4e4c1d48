@@ -1,0 +1,65 @@
+package com.kh.variable;
+
+public class Variable {
+	
+	/*
+	 * 자바에서 Memory = RAM
+	 * 변수 = 램에 값을 저장하기 위한 '공간'
+	 */
+	
+	public void 바지저장기능() {
+		String 옷장 = "긴바지";
+		String 행거 = "반바지";
+		System.out.println(옷장);
+		System.out.println(행거);
+	}
+	
+	public void findLunchMenu() {
+		
+		System.out.println("***변수를 사용하기 전***");
+		System.out.println(">>메뉴판<<");
+		System.out.println("1. 트리플치즈버거 세트(15,000원)");
+		System.out.println("2. 빅맥 세트(8,397원)");
+		System.out.println("3. 슈슈버거 세트(9,210원)");
+		System.out.println("------------------------");
+
+		System.out.println(">>주문내역<<");
+		System.out.println("트리플치즈버거 세트 "+4+"개 주문");
+		System.out.println(15000*4+"원");
+		System.out.println("빅맥 세트 "+9+"개 주문");
+		System.out.println(8397*9+"원");
+		System.out.println("슈슈버거 세트 "+4+"개 주문");
+		System.out.println(9210*4+"원");
+		System.out.println();
+		
+		System.out.println("***변수를 사용해 봅시다***");
+		String setOne = "KH아카데미 슈슈버거 세트";
+		int setOnePrice = 9800;
+		String setTwo = "KH아카데미 비크매크버거 세트";
+		int setTwoPrice = 8800;
+		
+		System.out.println(">>메뉴판<<");
+		System.out.println(setOne);
+		System.out.println("가격: " + setOnePrice+"원");
+		System.out.println(setTwo);
+		System.out.println("가격: " + setTwoPrice+"원");
+		System.out.println();
+		
+		System.out.println(">>주문내역<<");
+		System.out.println(setOne+" 10개");
+		System.out.println(setOnePrice*10+"원");
+		System.out.println(setTwo+" 5개");
+		System.out.println(setTwoPrice*5+"원");
+		System.out.println();
+		System.out.println("총계: "+(setOnePrice*10+setTwoPrice*5)+"원");
+	}
+		
+	public void declareVariable() {
+		/* 변수 선언 방법: 자료형(DataType) 변수식별자(변수명); 
+		 * ex) int price;
+		 *
+		 * 
+		 */
+	}
+	
+}

@@ -1,0 +1,13 @@
+package com.kh.second;
+
+public class PrintController {
+
+	public void PrintMyName() {
+		
+		System.out.print("안녕");
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.kh.first;
+
+		import javax.swing.JOptionPane; // 도구 가져오기
+
+		public class HelloWindow {
+		    public static void main(String[] args) {
+		        // 메시지 창을 띄우는 마법의 주문!
+		        JOptionPane.showMessageDialog(null, "안녕하세요! 새로운 창입니다.");
+		    }
+		}
+	}
+
+}

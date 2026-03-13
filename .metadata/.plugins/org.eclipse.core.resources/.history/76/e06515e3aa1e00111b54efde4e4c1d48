@@ -1,0 +1,24 @@
+package com.kh.variable;
+
+public class Variable2 {
+
+	public static void main(String[] args) {
+		
+		boolean isTrue;
+		isTrue = true; //초기화
+		
+		byte byteNumber = 9; // 1Byte = 8Bit -> 0~255
+		short shortNumber = 90; // 2Byte
+		int intNumber = 900; // 4Byte
+		long longNumber = 9000; // 8Byte
+		float floatNumber = 0.9F; // 4Byte
+		double doubleNumber = 0.09; // 8Byte
+		char money = '돈';
+		String str = "문자열";
+		
+		System.out.printf("논리 자료형: %b \n", isTrue); 
+		System.out.printf("정수 자료형: %d, 정수 자료형: %d, 정수 자료형: %d, 정수 자료형: %d \n", byteNumber, shortNumber, intNumber, longNumber);
+		System.out.printf("실수 자료형: %f, 실수 자료형: %f", floatNumber, doubleNumber);
+	}
+
+}

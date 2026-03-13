@@ -1,0 +1,46 @@
+package com.kh.first; // 패키지 선언부: 현재 클래스의 위치 / 자주색 글자는 예약어, 키워드.
+
+	/*
+	 *여러 줄 주석 쓰는 방법임; 
+	 *주석(Comments): 작성한 코드를 쉽게 이해하기 위함.
+
+	 *주석의 종류
+	 *1) 한 줄 주석: //이후 행의 끝까지 모든 내용이 주석으로 간주됨.
+	 *2) 여러 줄 주석: "/*"으로 시작, 끝을 시작의 반대로 적어야 함.
+	 
+	 *패키지는 적어도 세 단계 이상으로 만들어주는 것을 권장. ex) com.kh.first
+	 
+	 *{} = Scope / Block. 복합문을 구성하여 클래스의 영역을 나타냄.
+	 
+	 */
+
+public class HelloWorld {
+	
+	/* main method: 프로그램의 시작점(Entry Point). 프로그램 당 하나는 있어야 함.
+	 * Ex) public static void main(String[] args) {
+	 * "String[] args"는 파라미터라고 함.
+	 */
+	public static void main(String[] args) {
+		/*여기는 method 블럭이다.
+		 *method: 하나의 기능 단위. () 소괄호 열리고 닫히면 메소드임.
+		 *메소드 안의 구문을 수행하려면 반드시 "호출"해야 된다.
+		 */
+		
+		PrintMyName();
+		
+		System.out.println("Hello World~!!"); 
+		
+		PrintyourName();
+		}
+
+	public static void PrintMyName() {
+		
+		System.out.print("안녕하세요. 저는 이혁입니다."); 
+	}
+	
+	public static void PrintyourName() {
+		
+		System.out.print("당신은 누구입니까?"); 
+	}
+	
+}

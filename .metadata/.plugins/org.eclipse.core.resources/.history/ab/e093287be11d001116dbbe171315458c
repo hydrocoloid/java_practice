@@ -1,0 +1,5 @@
+package com.kh.first; // 패키지 선언부
+
+public class HelloWorld {
+
+}
