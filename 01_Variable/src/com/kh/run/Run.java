@@ -1,6 +1,8 @@
 package com.kh.run;
 
-import com.kh.variable.Variable;
+//import com.kh.variable.Variable;
+//import com.kh.variable.InputKeyBoard;
+import com.kh.variable.Casting;
 
 public class Run {
 	
@@ -12,9 +14,15 @@ public class Run {
 		클래스이름 별칭 = new 클래스이름();
 		클래스가 다른 패키지에 있는 경우: import 패키지명.클래스명; 
 		*/
-		Variable v= new Variable();
+		
+		//Variable v= new Variable();
 		//v.findLunchMenu();
-		v.declareVariable();
+		//v.declareVariable();
+		//InputKeyBoard ik = new InputKeyBoard();
+		//ik.inputTest();
+		Casting c = new Casting();
+		c.autoCasting();
+		
 	}
 	
 }

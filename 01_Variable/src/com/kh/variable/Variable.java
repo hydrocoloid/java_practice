@@ -16,7 +16,7 @@ public class Variable {
 		System.out.println(행거);
 	}
 	
-	/* public void findLunchMenu() {
+	 public void findLunchMenu() {
 		
 		System.out.println("***변수를 사용하기 전***");
 		System.out.println(">>메뉴판<<");
@@ -55,7 +55,6 @@ public class Variable {
 		System.out.println();
 		System.out.println("총계: "+(setOnePrice*10+setTwoPrice*5)+"원");
 	}
-	*/
 		
 	public void declareVariable() {
 		
