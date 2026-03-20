@@ -79,10 +79,12 @@ public class PuppyCare {
 			
 			
 			//System.out.println("❤️❤️❤️");
-			
-			
 			//break;
+			
+			sc.close();
+			
 		}
+		
 		
 	}
 

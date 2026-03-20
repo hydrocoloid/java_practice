@@ -1,9 +1,0 @@
-package com.kh.first; // 패키지 선언부: 현재 클래스의 위치 / 자주색 글자는 예약어, 키워드;
-
-	/*
-	 여러 줄 주석 쓰는 방법임; 
-	 */
-
-public class HelloWorld {
-
-}
