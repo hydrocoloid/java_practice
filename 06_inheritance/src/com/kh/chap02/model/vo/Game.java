@@ -1,0 +1,35 @@
+package com.kh.chap02.model.vo;
+
+//상속(Inheritance): 기존 클래스를 '이용'해서 새로운 클래스를 만드는 기술.
+
+public class Game {
+	//공통필드
+	private String gameName;
+	private String publisher;
+	
+	public Game() {
+		System.out.println("나는 부모클래스 Game이다");
+	}
+	public Game(String gameName, String publisher) {
+		super();
+		this.gameName = gameName;
+		this.publisher = publisher;
+	}
+	public String getGameName() {
+		return gameName;
+	}
+	public void setGameName(String gameName) {
+		this.gameName = gameName;
+	}
+	public String getPublisher() {
+		return publisher;
+	}
+	public void setPublisher(String publisher) {
+		this.publisher = publisher;
+	}
+	
+	public String info() {
+		return "게임정보 = [게임명: " + gameName + " / 운영사: " + publisher + "]";
+	}
+
+}

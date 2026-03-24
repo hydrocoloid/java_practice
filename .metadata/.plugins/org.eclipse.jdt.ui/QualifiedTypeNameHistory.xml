@@ -7,4 +7,6 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.kh.array.Array"/>
+    <fullyQualifiedTypeName name="com.kh.chap04.view.FieldView"/>
+    <fullyQualifiedTypeName name="com.kh.chap05.model.vo.Member"/>
 </qualifiedTypeNameHistroy>
