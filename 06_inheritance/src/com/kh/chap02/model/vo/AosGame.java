@@ -3,6 +3,7 @@ package com.kh.chap02.model.vo;
 public class AosGame extends Game { //public class AosGame extends 상속해주는 클래스명 {
 	private int characterCount;
 
+	
 	public int getCharacterCount() {
 		return characterCount;
 	}
