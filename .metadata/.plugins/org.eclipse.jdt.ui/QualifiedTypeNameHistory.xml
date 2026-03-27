@@ -14,4 +14,8 @@
     <fullyQualifiedTypeName name="com.kh.chap02.model.vo.RpgGame"/>
     <fullyQualifiedTypeName name="com.kh.chap01.model.vo.Parent"/>
     <fullyQualifiedTypeName name="com.kh.chap01.model.vo.Child1"/>
+    <fullyQualifiedTypeName name="com.kh.chap03.model.vo.MainChef"/>
+    <fullyQualifiedTypeName name="com.kh.chap03.model.vo.SaladChef"/>
+    <fullyQualifiedTypeName name="com.kh.chap03.model.vo.Chef"/>
+    <fullyQualifiedTypeName name="com.kh.chap03.controller.Cooking"/>
 </qualifiedTypeNameHistroy>
