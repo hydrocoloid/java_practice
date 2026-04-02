@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="com.kh.chap02.loop.LoopFor"/>
     <fullyQualifiedTypeName name="com.kh.chap01.condition.ConditionIf"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.kh.array.Array"/>
     <fullyQualifiedTypeName name="com.kh.chap04.view.FieldView"/>
@@ -18,4 +16,21 @@
     <fullyQualifiedTypeName name="com.kh.chap03.model.vo.SaladChef"/>
     <fullyQualifiedTypeName name="com.kh.chap03.model.vo.Chef"/>
     <fullyQualifiedTypeName name="com.kh.chap03.controller.Cooking"/>
+    <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="com.kh.chap02.model.dao.FileByteDao"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.kh.chap04.model.dao.BufferDao"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+    <fullyQualifiedTypeName name="com.kh.chap01.Integers"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="com.kh.chap02.model.Box"/>
+    <fullyQualifiedTypeName name="com.kh.chap02.model.vo.Plant"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.net.InetAddress"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

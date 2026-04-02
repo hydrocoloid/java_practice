@@ -1,5 +1,8 @@
 package com.kh.controller;
 
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
 public class StringController { //String 클래스의 특징이 뭔가요? 불변입니다. immutable.
 	
 	public void method1() {
@@ -66,7 +69,7 @@ public class StringController { //String 클래스의 특징이 뭔가요? 불�
 	
 	public void method3() {
 		
-		String str1 = new String("Hello"); //실무에서 이렇게 쓰면 혼난다 ㅋㅋ.
+		//String str1 = new String("Hello"); // -> 실무에서 이렇게 쓰면 혼난다 ㅋㅋ. 메모리 낭비.
 		String str2 = "Hello"; // 문자열 리터럴은 대입연산자를 사용해 대입할 때 String Pool(heap) 영역에 등록됨.
 		// String Pool에는 동일한 내용의 문자열 value가 존재할 수 없음.
 		System.out.println(System.identityHashCode(str2));
@@ -107,17 +110,99 @@ public class StringController { //String 클래스의 특징이 뭔가요? 불�
 	public void method5() {
 		
 		String str1 = "은총알은 없다";
-		
 		//1. 문자열.length() = 문자열의 길이를 반환.
 		System.out.println("str1의 길이: "+str1.length());
 		
 		String userId = "saldkjflsㄴㅁㅇㄻㄴㅇㄹㄴㅇㄹkdjfl;asdkjf;l";
-		if(8 <= userId.length() && userId.length() <=20) {
+		/*
+		if(!(8 <= userId.length() && userId.length() <=20)) {
 			throw new RuntimeException("ID가 너무 길잖소.");
 		}
+		*/
 		
 		//2. 문자열.charAt(): char
+		char ch = userId.charAt(0);
+		System.out.println(ch);
 		
+		
+		String phoneNumber = "010-1234-5678";
+		//3. 문자열.substring(int beginindex) : String
+		System.out.println(phoneNumber.substring(4));
+		
+		
+		//4. 문자열.indexOf(String): int
+		System.out.println(str1.indexOf("없다"));
+		
+		
+		// kim@kh.co.kr
+		String[] emails = {"hong@kh.com", "kim@kh.com", "lee@kh.com", "hahahoho@kh.com"};
+		//System.out.println(emails[0].substring(0,4));
+		//System.out.println(emails[0].substring(0,4));
+		
+		for(int i = 0; i < emails.length; i++) {
+			System.out.println(emails[i].substring(0, emails[i].indexOf("@")));
+		}
+		
+		String fileName = "slkdjflaskjdf.jpg";
+		System.out.println(fileName.substring(fileName.indexOf("."))); // .jpg
+		System.out.println(fileName.substring(fileName.indexOf(".")+1)); // jpg
+		
+		String fileName2 = "sl.kd.jfl.ask.jdf.jpg";
+		System.out.println(fileName2.substring(fileName2.lastIndexOf("."))); // .jpg
+		
+		//5. 문자열.toCharArray(): char[]
+		String ch2 = "배열로 만들 문자열"; 
+		char[] chArr = ch2.toCharArray();
+		for(int i = 0; i < chArr.length; i++) {
+			System.out.println(chArr[i]);
+		}
+		for(char c : chArr) { //for(데이터타입 변수명 : 배열/컬렉션)
+			System.out.println(c);
+		}
+		
+		// char[] -> String
+		System.out.println(String.valueOf(chArr));
+		
+		
+		//문자열.replace(Str, Str): String.
+		String replaceStr = "KH 아카데미";
+		System.out.println(replaceStr.replace("KH", "더조은"));
+		
+		//문자열.toUpperCase() -> 싹 다 대문자로 / 문자열.toLowerCase() -> 싹 다 소문자로.
+		String lowerStr = "abcd";
+		String upperStr = "ABCD";
+		System.out.println(lowerStr.toUpperCase());
+		System.out.println(upperStr.toLowerCase());
+		
+		//
+		
+		
+		/* 코딩테스트 예제: 
+		 * String str1 = "11,22,33,44"; -> ,를 기준으로 숫자 네 개 분리하기
+		 * String str2 = "22,44,66,88";
+		 * String str3 = "abd asdflksaj"; -> 공백문자를 기준으로 분리하기.
+		 */
+		
+		String split = "갈비,갈비찜,곽만근,만두탕";
+		
+		String[] galbi = split.split(",");
+		System.out.println(Arrays.toString(galbi));
+		
+		//java.util.StringTokenizer
+		
+		StringTokenizer stn = new StringTokenizer(split, ",");
+		/*
+		System.out.println(stn.nextToken());
+		System.out.println(stn.nextToken());
+		System.out.println(stn.nextToken());
+		System.out.println(stn.nextToken());
+		*/
+		
+		while(stn.hasMoreTokens()) { //남아 있는 토큰이 있다면 true, 없다면 false
+			System.out.println(stn.nextToken());
+		}
+	
 	}
+	
 	
 }
